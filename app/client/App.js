@@ -1,0 +1,17 @@
+import React from 'react';
+import { render } from 'react-dom';
+
+class App extends React.Component {
+  constructor(props){
+    super(props)
+    this.orders = props.orders
+  }
+  render(){
+    return (
+      <div>
+        LAL!
+      </div>
+    )
+  }
+}
+export default App
