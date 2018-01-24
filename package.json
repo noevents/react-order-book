@@ -8,7 +8,7 @@
     "build:client": "webpack --config ./webpack.prod.config.js/",
     "build:watch:client": "webpack --config ./webpack.config.js/ --watch",
     "build:prod": "npm run build && npm run build:client",
-    "start": "npm run build:prod && NODE_ENV=production node ./build/server/index.js",
+    "start": "npm run build:prod && node ./build/server/index.js",
     "start:dev": "./node_modules/.bin/parallelshell \"npm run build:watch\" \"npm run build:watch:client\" \"nodemon ./build/server/index.js\""
   },
   "repository": "https://github.com/noevents/react-order-book.git",

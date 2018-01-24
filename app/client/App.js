@@ -49,7 +49,7 @@ class App extends React.Component {
   update(){
     let where = Math.round(Math.random()) ? 'asks' : 'bids'
     let opposite = where === 'asks' ? 'bids' : 'asks'
-    if(this.state[opposite].length<=3){
+    if(this.state[opposite].length<3){
       this.addOrder(opposite)
     } else {
       this.addOrder(where)
