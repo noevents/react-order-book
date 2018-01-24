@@ -6,7 +6,7 @@ import { renderToString } from 'react-dom/server'
 import App from '../client/App'
 import express from 'express'
 
-const port = 8080
+const port = process.env.PORT || 8080
 const app = express()
 const assets = express.static(path.join(__dirname, '../'))
 
